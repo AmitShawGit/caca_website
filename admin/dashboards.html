@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <!--bootstrap5 Css-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <!--Custom CSS-->
+    <link rel="stylesheet" href="./styles/style.css">
+    <!--FontAwesome 6-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+     
+        
+</head>
+
+<body>
+
+    <menu>
+        <section class="sidebar">
+            <div class="vertical-nav bg-dark text-white" id="sidebar">
+
+                <div class="py-2 px-2 align-item-center">
+                    <img src="./img/logo1.png" alt="LOGO" width="150">
+                    <div class="mediabody my-2 mb-0">
+                        <h6>Your Name </h6>
+                        <p>Slogan of Company </p>
+                    </div>
+                </div>
+                <ul class="nav flex-column mb-0 minimenu">
+
+                    <li class="nav-item">
+                        <a href="dashboards.html" class="nav-link">
+                            <i class="fa-solid fa-chart-line mx-1"></i>
+                            Dashboard
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">
+                            <i class="fa-solid fa-server mx-1"></i>
+                            Master Data
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="add.html" class="nav-link">
+                            <i class="fa-solid fa-chart-bar mx-1"></i>
+                            Add Product
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">
+                            <i class="fa-solid fa-magnifying-glass-chart mx-1"></i>
+                            View Product
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">
+                            <i class="fa-solid fa-chart-line mx-1"></i>
+                            Documents
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">
+                            <i class="fa-solid fa-file mx-1"></i>
+                            Massages
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">
+                            <i class="fa-solid fa-tv mx-1"></i>
+                            Visit Site
+                        </a>
+                    </li>
+
+                </ul>
+            </div>
+        </section>
+    </menu>
+
+    <section class="main-content page-content mt-2" id="content">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="lead breadcumb">
+                        <div class="left-content mt-3">
+                            <ul>
+                                <li><i class="fa fa-home" id="sidebarCollapse" style="cursor:pointer"></i></li>
+                                <li>|</li>
+                                <li>Dashboard</li>
+                            </ul>
+                        </div>
+                        <div class="right-content mt-3">
+                            <ul>
+                                <li>avatar</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-3">
+
+                </div>
+                <div class="col-md-3">
+
+                </div>
+                <div class="col-md-3">
+
+                </div>
+                <div class="col-md-3">
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Bootstrap5 JS-->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"
+        integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"
+        integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <!--my js-->
+        <script src="./jsfiles/index.js"></script>
+       <script>
+
+        $(function () {
+            $('#sidebarCollapse').on('click', function () {
+                $('#sidebar, #content').toggleClass('active');
+            });
+        });
+
+    </script>
+
+</body>
+
+</html>
